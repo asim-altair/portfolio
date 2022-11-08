@@ -106,8 +106,8 @@ body{
     }
 }
 .main-heading{
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 20rem;
     left: 50%;
     transform: translate(-50%,-50%);
     align-items: center;
@@ -122,7 +122,7 @@ body{
     color: aqua;
 }
 .text{
-    font-family: cursive;
+    font-family: 'Roboto';
     font-size: 20px;
 }
 .btn1,.btn2{
@@ -144,12 +144,9 @@ body{
     color: black;
 }
 .icons{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-bottom: 1px solid white;
-    width: 200px;
+    position: relative;
+    top: 35rem;
+    width: auto;
     align-items: center;
     justify-content: center;
     text-align: center;
