@@ -106,32 +106,25 @@ body{
     }
 }
 .main-heading{
-    position: relative;
-    top: 20rem;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    position: relative;
+    top: 300px;
 }
 .main-heading h1{
-    font-size: 60px;
-    letter-spacing: 5px;
+    font-size: 50px;
+    letter-spacing: 3px;
 }
 .main-heading h1 span{
     color: aqua;
 }
-.text{
-    font-family: 'Roboto';
-    font-size: 20px;
-}
 .btn1,.btn2{
     margin: 10px;
-    padding: 10px 20px;
+    padding: 10px;
     background: none;
     border: 1px solid white;
     color: white;
-    font-size: 15px;
     cursor: pointer;
     transition: .5s ease;
 }
@@ -144,21 +137,16 @@ body{
     color: black;
 }
 .icons{
-    position: relative;
-    top: 35rem;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    margin-top: 250px;
 }
 .icon{
     color: white;
-    margin: 10px;
     cursor: pointer;
     transition: .5s ease;
+    margin: 10px;
 }
 .icon:hover{
-    color: rgb(109, 217, 253);
+    color: rgb(100, 172, 255);
 }
 .skill-container{
     display: flex;
