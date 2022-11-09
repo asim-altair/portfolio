@@ -136,9 +136,6 @@ body{
     background-color: white;
     color: black;
 }
-.icons{
-    margin-top: 250px;
-}
 .icon{
     color: white;
     cursor: pointer;
@@ -147,6 +144,9 @@ body{
 }
 .icon:hover{
     color: rgb(100, 172, 255);
+}
+@media screen and (max-width:) {
+    
 }
 .skill-container{
     display: flex;
