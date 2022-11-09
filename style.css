@@ -36,6 +36,15 @@ body{
 .menu{
     margin-top: 10px;
 }
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu-responsive a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
 .menu-item{
     display: inline;
     text-decoration: none;
@@ -126,6 +135,7 @@ body{
     border: 1px solid white;
     color: white;
     cursor: pointer;
+    letter-spacing: 2px;
     transition: .5s ease;
 }
 .btn2{
@@ -233,4 +243,18 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.about{
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.about p{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
