@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Asim_Amin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="shortcut icon" href="./props/favicon.png" type="image/x-icon">
     
-    <script src="validation.js"></script>
 </head>
 <body>
     <div id="menu2">
         <i onclick="unclicked()"  class="fa-solid fa-xmark fa-2x btn-xmark"></i>
         <ul class="menu-responsive">
             <a href="index.html"><li class="menu-item">Home</li></a>
-            <a href="about.html"><li class="menu-item">About</li></a>
+            <a href="about.html"><li class="menu-item active">About</li></a>
             <a href="portfolio.html"><li class="menu-item">Portfolio</li></a>
         </ul>
     </div>
@@ -64,8 +64,10 @@
                     <h1>Message Me</h1>
                     <input class="input-fields" type="text" name="data[Name]" placeholder="Full Name">
                     <input onkeydown="validate()" class="input-fields" id="email-field" value="" type="text" name="data[Email]" placeholder="Email">
+                    <div class="hide" id="cross-icon"><i class="fa-regular fa-circle-xmark"></i><span>please enter valid email</span></div>
+                    <div class="hide" id="check-icon"><i class="fa-regular fa-circle-check"></i></i><span>your email is correct</span></div>
                     <textarea class="input-fields" name="data[Message]" id="" cols="30" rows="10"></textarea>
-                    <button class="input-fields btn-send">Send</button>
+                    <button class="input-fields btn-send" id="send-button">Send</button>
                 </form>
             </div>
         </div>
@@ -80,6 +82,7 @@
             <p>&copy; 2022 Mern Stack Develpor | All Rights Reserved</p>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="menu.js"></script>
+    <script src="validation.js"></script>
 </body>
 </html>
