@@ -303,3 +303,78 @@ body{
     background-color: white;
     color: black;
 }
+.center-every{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    margin: 30px 0 20px 0;
+}
+.about-container{
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid white; */
+    color: white;
+    border-radius: 5px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.about-container:hover{
+    background-color: white;
+    color: black;
+}
+.box-model{
+    max-width: 450px;
+    padding: 20px;
+}
+.name span{
+    color: rgb(239,106,79);
+}
+.information p{
+    text-align: justify;
+}
+.personal-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.info-container{
+    margin: 10px 50px;
+}
+.highlight{
+    color: rgb(239,106,79);
+    text-align: start;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+}
+.input-fields{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.btn-send{
+    cursor: pointer;
+    background-color: rgb(239,106,79);
+}
+@media screen and (max-width: 590px) {
+    .maps iframe{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .maps iframe{
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    
+    <script src="validation.js"></script>
 </head>
 <body>
     <div id="menu2">
@@ -29,21 +31,42 @@
                 <a href="portfolio.html"><li class="menu-item">Portfolio</li></a>
             </ul>
         </div>
-        <div class="container">
-            <div class="about">
-                
-                <p><span class="flag"></span>Hello! I am Asim and I love to build stuff that people value. I am currently working in MERN Stack development to sharpen my skills I have done a few projects and I am improving my skills day by day</p>
-                
-                <p><span class="flag"></span>I have learned REACT from online resources and I have a great passion to learn more technologies to solve problems that people are facing. I spend my whole time on computer screen cause I like what I do </p>
+        <div class="container center-every">
+            <h1 class="heading">About Me</h1>
+            <div class="about-container">
+                <div class="image box-model">
+                    <img src="./props/myimg.jpg" alt="my photo" height="300px">
+                </div>
+                <div class="information box-model">
+                    <h3 class="name">My name is <span>Asim Amin</span></h3>
+                    <p>I love to build stuff that people value. I am passionate about developing solutions to the problems that people face. I use MERN Stack in this regard. I am still learning more technologies day by day and improving my skills by leaps and bounds. I have the eagerness to learn that's why I spend hours on the computer screen. I also love to play video games. I play so many games from GTA to Assassin's Creed but the game that is close to my heart is called Mount and Blade Warband. I also have tried to make my own games but couldn't cause it takes a lot of time. I also know modern softwares like Photoshop, 3Ds Max and Unity 3D to name a few.</p>
+                    <div class = "personal-info">
+                        <div class = "info-container">
+                            <h6 class = "highlight">Phone:</h6>
+                            <h5>+923238973963</h5>
+                        </div>
+                        <div class = "info-container">
+                            <h6 class = "highlight">Email:</h6>
+                            <h5>altairasim@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact">
-                <h1>Contact Me</h1>
-                <form action="" class="inputs">
-                    <input type="text" placeholder="Full Name" class="input">
-                    <input type="email" placeholder="Email" class="input">
-                    <textarea rows="5" cols="20" placeholder="Message" class="input"></textarea>
+            <h1 class="heading">Contact Me</h1>
+        </div>
+        <div class="contact-container about-container">
+            <div class="maps box-model">
+                <h1>My Office</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2076.621436362298!2d75.08431634551152!3d32.343935953559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c05d9f232f1f3%3A0x9a7a21c9c5c56a00!2sBabar%20Restaurant!5e1!3m2!1sen!2s!4v1668069540681!5m2!1sen!2s" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form box-model">
+                <form action="https://sheetdb.io/api/v1/dlvxrtzikavnj" method="post" id="sheetdb-form" class="message">
+                    <h1>Message Me</h1>
+                    <input class="input-fields" type="text" name="data[Name]" placeholder="Full Name">
+                    <input onkeydown="validate()" class="input-fields" id="email-field" value="" type="text" name="data[Email]" placeholder="Email">
+                    <textarea class="input-fields" name="data[Message]" id="" cols="30" rows="10"></textarea>
+                    <button class="input-fields btn-send">Send</button>
                 </form>
-                <button class="btn1 send-btn">Send</button>
             </div>
         </div>
         <div class="footer">
