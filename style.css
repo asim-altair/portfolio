@@ -156,9 +156,6 @@ body{
 .icon:hover{
     color: rgb(100, 172, 255);
 }
-@media screen and (max-width:) {
-    
-}
 .skill-container{
     display: flex;
     flex-direction: column;
@@ -319,15 +316,9 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* border: 2px solid white; */
     color: white;
     border-radius: 5px;
     transition: all .5s ease;
-    cursor: pointer;
-}
-.about-container:hover{
-    background-color: white;
-    color: black;
 }
 .box-model{
     max-width: 450px;
@@ -366,15 +357,26 @@ body{
 .hide{
     visibility: hidden;
 }
+.hide-frame{
+    display: none;
+}
 #cross-icon{
     color: red;
+    position: relative;
+    bottom: 10px;
+    right: 30px;
 }
-#check-icon{
-    color: green;
+.icon-cross{
+    position: absolute;
+    bottom: 30px;
+    left: 260px;
+    transition: .4s ease;
 }
 .btn-send{
     cursor: pointer;
     background-color: rgb(239,106,79);
+    color: white;
+    border: 1px solid white;
 }
 @media screen and (max-width: 590px) {
     .maps iframe{

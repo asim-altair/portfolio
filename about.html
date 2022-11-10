@@ -60,14 +60,17 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2076.621436362298!2d75.08431634551152!3d32.343935953559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c05d9f232f1f3%3A0x9a7a21c9c5c56a00!2sBabar%20Restaurant!5e1!3m2!1sen!2s!4v1668069540681!5m2!1sen!2s" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="form box-model">
-                <form action="https://sheetdb.io/api/v1/dlvxrtzikavnj" method="post" id="sheetdb-form" class="message">
+                <iframe class="hide-frame" src="" name="hidden-frame" frameborder="0"></iframe>
+                <form onsubmit="submited()" class="message" action="https://docs.google.com/forms/d/e/1FAIpQLSfAqsRiU1qQc_4Nxv4Mn1UGQcMsnmub8hoXcPpij3GM33SGBg/formResponse" method="post" target="hidden-frame">
                     <h1>Message Me</h1>
-                    <input class="input-fields" type="text" name="data[Name]" placeholder="Full Name">
-                    <input onkeydown="validate()" class="input-fields" id="email-field" value="" type="text" name="data[Email]" placeholder="Email">
-                    <div class="hide" id="cross-icon"><i class="fa-regular fa-circle-xmark"></i><span>please enter valid email</span></div>
-                    <div class="hide" id="check-icon"><i class="fa-regular fa-circle-check"></i></i><span>your email is correct</span></div>
-                    <textarea class="input-fields" name="data[Message]" id="" cols="30" rows="10"></textarea>
-                    <button class="input-fields btn-send" id="send-button">Send</button>
+                    <input class="input-fields" type="text" placeholder="Full Name" name="entry.461562543">
+                    <input onkeydown="validate()" class="input-fields" id="email-field" type="text" placeholder="Email" name="entry.1167049598">
+                    <div class="hide" id="cross-icon">
+                        <i class="icon-cross fa-regular fa-circle-xmark"></i>
+                        <span>please enter valid email</span>
+                    </div>
+                    <textarea class="input-fields" name="entry.2109302697" id="" cols="30" rows="10"></textarea>
+                    <input onclick="clear()" type="submit" value="Send" class="input-fields btn-send" id="send-button"></input>
                 </form>
             </div>
         </div>
