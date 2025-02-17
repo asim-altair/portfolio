@@ -1,49 +1,162 @@
 .container {
-  padding: 0 100px;
-  margin-top: 100px;
+  background-color: #272727;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 }
-.img-container img {
-  width: 300px;
+.heading {
+  position: relative;
+  top: 0%;
+  left: 30%;
+  animation: appear 1s ease-out forwards;
 }
-.main-heading {
-  color: rgb(17, 194, 56);
-  font-size: 3rem;
+.heading h1 {
+  font-size: 4rem;
+  width: 100px;
 }
-.name {
-  letter-spacing: 8px;
-}
-.intro {
-  color: white;
-  max-width: 500px;
+.heading p {
+  width: 500px;
   letter-spacing: 2px;
 }
-.btn1,
-.btn2 {
-  padding: 10px;
-  margin-top: 40px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-  box-sizing: border-box;
-  width: 110px;
-  height: 40px;
-  transition: 0.2s all;
+.responsive {
+  font-size: 0.5rem;
+  position: relative;
+  top: 170px;
+  left: 250px;
 }
-.btn1 {
-  background-color: rgb(1, 160, 35);
+.efficient {
+  font-size: 0.5rem;
+  position: relative;
+  top: 230px;
+  left: 160px;
 }
-.btn1:hover {
-  background-color: rgb(17, 194, 56);
+.fast {
+  font-size: 0.5rem;
+  position: relative;
+  top: 280px;
+  left: 70px;
 }
-.btn2 {
-  border: 2px solid rgb(1, 160, 35);
-  margin-left: 10px;
+.optimized {
+  font-size: 0.5rem;
+  position: relative;
+  top: 340px;
+  left: 110px;
 }
-.btn2:hover {
-  background-color: rgb(17, 194, 56);
-  border: 2px solid rgb(17, 194, 56);
+.maintainable {
+  font-size: 0.5rem;
+  position: relative;
+  top: 390px;
+  left: 120px;
+}
+.user-friendly {
+  font-size: 0.5rem;
+  position: relative;
+  top: 450px;
+  left: 135px;
+}
+.dots {
+  background-color: white;
+  height: 10px;
+  width: 50px;
+  animation: appear 1s ease-out forwards;
+}
+.skills {
+  padding: 170px;
+  position: relative;
+  left: 55%;
+  bottom: 65%;
+  z-index: 6;
+  animation: rotate 40s linear infinite;
+}
+.skill {
+  animation: rotateSkill 40s linear infinite;
+}
+.react {
+  position: absolute;
+  top: 0px;
+}
+.js {
+  position: absolute;
+  bottom: 0;
+}
+.css {
+  position: absolute;
+  left: 0;
+}
+.html {
+  position: absolute;
+  right: 0;
+}
+.git {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+}
+.github {
+  position: absolute;
+  bottom: 80%;
+  right: 80%;
+}
+.unity {
+  position: absolute;
+  bottom: 80%;
+  left: 80%;
+}
+.c {
+  z-index: 99;
+  width: 50px;
+  position: absolute;
+  top: 80%;
+  right: 80%;
+}
+.logo {
+  position: relative;
+  bottom: 50%;
+  left: 70%;
+  animation: appear 2s ease-out forwards;
+  z-index: 2;
+}
+.bottom-line {
+  position: relative;
+  bottom: 40%;
+  left: 20%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  animation: appear 1s ease-out forwards;
+}
+.bottom-line div {
+  width: 10px;
+  height: 50px;
+  background-color: white;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateSkill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }

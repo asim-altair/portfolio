@@ -1,0 +1,13 @@
+.about-container {
+  width: 65%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+}
+.about-container p {
+  letter-spacing: 1px;
+}
+.footer {
+  height: 100px;
+  width: 100%;
+}
